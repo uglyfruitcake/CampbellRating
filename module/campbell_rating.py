@@ -2,13 +2,9 @@ import math
 from operator import itemgetter
 
 
-def campbell_rating(limit, power):
-    ratings = []
-    for i in range(1, limit):
-        r = (num_factors(i) ** power)/float(i)
-        ratings.append([i, r])
-
-    return sorted(ratings, key=itemgetter(2))[1]
+def campbell_rating(num, power):
+    r = (num_factors(num) ** power)/float(num)
+    return [num, r]
 
 
 def is_factor(factor, product):
@@ -34,4 +30,4 @@ def num_factors(number):
     if number == 1:
         return 1
     else:
-        return number
+        return number_factors

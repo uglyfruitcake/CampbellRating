@@ -1,0 +1,1 @@
+from campbell_rating import campbell_rating

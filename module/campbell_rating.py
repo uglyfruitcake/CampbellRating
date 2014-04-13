@@ -16,14 +16,14 @@ def is_factor(factor, product):
 def num_factors(number):
     possible_factor = 2
     number_factors = 2
-    sqrt = math.sqrt(number)
+    st = math.sqrt(number)
 
-    while possible_factor < sqrt:
+    while possible_factor < st:
         if is_factor(possible_factor, number):
             number_factors += 2
         possible_factor += 1
 
-    if is_factor(sqrt, number):
+    if possible_factor == st:
         number_factors += 1
 
     if number == 1:

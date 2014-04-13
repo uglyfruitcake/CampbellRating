@@ -1,5 +1,4 @@
 import math
-from operator import itemgetter
 
 
 def campbell_rating(num, power):
